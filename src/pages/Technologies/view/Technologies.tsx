@@ -33,13 +33,13 @@ const Technologies = () => {
                 <Grid size={{ xs: 12, md: 3 }}>
                     <TechnologySection
                         icon={<ReactIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
-                        title={'Frontend'} technologies={'React, Angular, WordPress'}
+                        title={'Frontend'} technologies={'React, Angular, WordPress, PWAs, JavaScript, TypeScript, HTML, CSS'}
                     />
                 </Grid>
                 <Grid size={{ xs: 12, md: 3 }}>
                     <TechnologySection
                         icon={<DataBaseIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
-                        title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js'}
+                        title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js, Docker'}
                     />
                 </Grid>
                 <Grid size={{ xs: 12, md: 3 }}>

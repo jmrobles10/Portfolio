@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { ReactElement } from 'react';
 
 interface TechnologySectionProps {
@@ -11,7 +11,9 @@ const TechnologySection = ({ icon, title, technologies }: TechnologySectionProps
     const fontFamily = 'Inter, sans-serif';
     return (
         <Stack direction={'column'} spacing={2} justifyContent={{ xs: 'center', md: 'start' }} alignItems={{ xs: 'center', md: 'start' }}>
-            {icon}
+            <Box display={'flex'} justifyContent={'center'} alignItems={'center'} height={'4rem'} >
+                {icon}
+            </Box>
             <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} color={'#fff'}>
                 {title}
             </Typography>
