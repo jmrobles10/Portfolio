@@ -13,7 +13,7 @@ const CardProject = ({ image, title, description, technologies, codeLink, projec
     const fontFamily = 'Inter, sans-serif';
     return (
         <Grid size={{ xs: 12, md: 4 }}>
-            <Card elevation={4} sx={{
+            <Card elevation={2} sx={{
                 background: '#212D45',
                 borderRadius: '1rem',
                 height: '100%',
@@ -23,7 +23,11 @@ const CardProject = ({ image, title, description, technologies, codeLink, projec
                 <CardMedia
                     component="img"
                     src={image}
-                    sx={{ width: '100%', height: '15rem', objectFit: 'contain', backgroundColor: '#000' }}
+                    sx={{
+                        width: '100%',
+                        height: { xs: '9rem', md: '11rem', xl: '14rem' },
+                        objectFit: 'contain', backgroundColor: '#000'
+                    }}
                 />
                 <Stack direction={'column'} justifyContent={'space-between'} alignItems={'center'} spacing={2} p={'1rem 2rem 2rem 2rem'} sx={{ flex: 1 }}>
                     <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} fontWeight={600} color={'#fff'} textAlign={'center'}>
