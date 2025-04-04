@@ -13,10 +13,9 @@ const CardProject = ({ image, title, description, technologies, codeLink, projec
     const fontFamily = 'Inter, sans-serif';
     return (
         <Grid size={{ xs: 12, md: 4 }}>
-            <Card elevation={2} sx={{
+            <Card elevation={4} sx={{
                 background: '#212D45',
                 borderRadius: '1rem',
-                boxShadow: '0px 0px 5px 0px rgba(124, 124, 124, 0.5)',
                 height: '100%',
                 display: 'flex',
                 flexDirection: 'column'
