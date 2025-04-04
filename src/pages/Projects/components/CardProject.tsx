@@ -36,7 +36,7 @@ const CardProject = ({ image, title, description, technologies, codeLink, projec
                             {description}
                         </Typography>
                         <Stack direction={'column'} justifyContent={'end'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
-                            padding={'0rem 1rem'} flex={1}
+                            padding={'0rem 0rem'} flex={1}
                         >
                             <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', xl: '1.1rem' }} color={'#fff'}>
                                 Stack
@@ -50,7 +50,7 @@ const CardProject = ({ image, title, description, technologies, codeLink, projec
                                     </Grid>
                                 ))}
                             </Grid>
-                            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}>
+                            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} spacing={1} alignSelf={'stretch'}>
                                 {codeLink && (
                                     <Box flex={1} display={'flex'} justifyContent={'center'} alignItems={'center'}>
                                         <Button variant='outlined' sx={{ borderColor: '#D0BB57', color: '#D0BB57', textTransform: 'none' }} onClick={() => window.open(codeLink, '_blank')}>
