@@ -10,7 +10,7 @@ const LayoutPortfolio = ({ children }: LayoutPortfolioProps) => {
     return (
         <Container maxWidth="xl" sx={{ overflowX: 'hidden' }}>
             <Header />
-            <Stack marginTop={'5.625rem'} spacing={20} direction={'column'}>
+            <Stack marginTop={'5.625rem'} spacing={{ xs: 10, md: 15, xl: 20 }} direction={'column'}>
                 {children}
             </Stack>
             <Footer />

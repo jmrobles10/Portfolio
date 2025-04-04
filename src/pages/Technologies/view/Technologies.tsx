@@ -21,7 +21,7 @@ const Technologies = () => {
                 sx={{ background: 'linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%)', borderRadius: '1rem', }}
             />
             <Stack direction={'column'} spacing={0} justifyContent={'start'} alignItems={'start'}>
-                <Typography fontFamily={fontFamily} fontSize={{ xs: '3rem', xl: '4rem' }} fontWeight={600} color={'rgb(211, 211, 211)'}>
+                <Typography fontFamily={fontFamily} fontSize={{ xs: '2rem', md: '3rem', xl: '4rem' }} fontWeight={600} color={'rgb(211, 211, 211)'}>
                     Technologies
                 </Typography>
                 <Typography fontFamily={fontFamily} fontSize={'1rem'} color={'rgb(211, 211, 211)'}>

@@ -17,8 +17,8 @@ const Footer = () => {
                 <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}
                     sx={{ border: '1px solid #2ca9bc', borderRadius: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}
                 >
-                    <MailIcon sx={{ height: '2.5rem', width: '2.5rem' }} />
-                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1.1rem', xl: '1.3rem' }} color={'#fff'}>
+                    <MailIcon sx={{ height: '2rem', width: '2rem' }} />
+                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', xl: '1.2rem' }} color={'#fff'}>
                         jm.robles30@hotmail.com
                     </Typography>
                 </Stack>
@@ -26,7 +26,7 @@ const Footer = () => {
             <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
                 p={{ xs: '1rem 1rem', sm: '1rem 5rem', xl: '1rem 5rem' }}
             >
-                <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', sm: '1.3rem' }} color={'rgba(211, 211, 211, 0.9)'}>
+                <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', sm: '1.2rem' }} color={'rgba(211, 211, 211, 0.9)'}>
                     The only real mistake is the one from which we learn nothing
                 </Typography>
                 <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
