@@ -10,16 +10,20 @@ const Hero = () => {
             pl={{ xs: '1rem', md: '3rem', xl: '0rem' }} pr={{ xs: '1rem', md: '3rem', xl: '0rem' }}
             id='hero'
         >
-            <Grid size={{ xs: 12, md: 6 }} container direction={'column'} justifyContent={'center'} alignItems={'start'} pt={{ xs: '1rem', md: '4rem', xl: '10rem' }}
-                spacing={{ xs: 2, xl: 3 }}>
+            <Grid size={{ xs: 12, md: 6 }} container direction={'column'} justifyContent={'center'} alignItems={'start'}
+                pt={{ xs: '1rem', md: '3rem', xl: '7rem' }}
+                spacing={{ xs: 2, md: 1, xl: 3 }} zIndex={2}>
                 <Grid size={12}>
-                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} fontWeight={700} color={'rgba(255, 255, 255, 0.5)'}>
+                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1.3rem', md: '1.5rem', xl: '2rem' }} fontWeight={700} color={'#878B92'}>
                         Personal portfolio
                     </Typography>
                 </Grid>
                 <Grid size={12}>
                     <Typography fontFamily={fontFamily} fontSize={{ xs: '2.5rem', md: '3.5rem', xl: '4.5rem' }} fontWeight={600} color={'#fff'}
-                        sx={{ xs: { whiteSpace: 'nowrap' }, xl: { whiteSpace: 'normal' } }}>
+                        sx={{
+                            whiteSpace: { xs: 'normal', md: 'nowrap' }
+                        }}
+                    >
                         Joel Mateo Robles Atuesta
                     </Typography>
                 </Grid>
@@ -59,10 +63,10 @@ const Hero = () => {
                     </Button>
                 </Grid>
             </Grid>
-            <Grid size={{ xs: 12, md: 6 }} display={'none'} position={{ xs: 'absolute', md: 'relative' }} justifyContent={'end'} alignItems={'center'}
-                mt={{ xs: '2rem', xl: '5rem' }}
+            <Grid size={{ xs: 12, md: 6 }} display={'flex'} position={{ xs: 'absolute', md: 'relative' }} justifyContent={'end'}
+                alignItems={'center'} mt={{ xs: '2rem', xl: '5rem' }} zIndex={1} right={{ xs: 'calc(50% - 10rem)', md: '0rem' }}
             >
-                <BackgroundAnimation sx={{ height: { xs: '20rem', md: '30rem', xl: '45rem' }, width: { xs: '20rem', md: '30rem', xl: '45rem' } }} />
+                <BackgroundAnimation sx={{ height: { xs: '20rem', md: '25rem', xl: '35rem' }, width: { xs: '20rem', md: '25rem', xl: '35rem' } }} />
             </Grid>
         </Grid>
     )

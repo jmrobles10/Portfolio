@@ -1,13 +1,14 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import CardAchievment from '../components/CardAchievment';
 
 const Achievements = () => {
     const fontFamily = 'Inter, sans-serif';
 
     return (
         <Stack
-            id='achievements'
-            pl={{ xs: '3rem', xl: '0rem' }} pr={{ xs: '3rem', xl: '0rem' }}
-            spacing={6}
+            id='technologies'
+            pl={{ xs: '0.5rem', md: '3rem', xl: '0rem' }} pr={{ xs: '0.5rem', md: '3rem', xl: '0rem' }}
+            spacing={4}
             direction={'column'}
         >
             <Box
@@ -19,14 +20,32 @@ const Achievements = () => {
                 <Typography fontFamily={fontFamily} fontSize={{ xs: '3rem', xl: '4rem' }} fontWeight={600} color={'rgb(211, 211, 211)'}>
                     Personal Achievements
                 </Typography>
-                <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', xl: '1.2rem' }} color={'#fff'}>
-                    Throughout my 3 years of experience as a developer, both in professional work and personal projects, I've gained extensive knowledge in modern web development, mastering various frameworks and tools. I've developed robust enterprise applications and creative personal projects that have helped me grow as a full-stack developer.{' '}
-                </Typography>
             </Stack>
-
+            <Grid container spacing={2}>
+                {
+                    achievements.map((achievement) => (
+                        <CardAchievment key={achievement.title} title={achievement.title} description={achievement.description} />
+                    ))
+                }
+            </Grid>
 
         </Stack>
     )
 }
 
 export default Achievements
+
+const achievements = [
+    {
+        title: '+ 2',
+        description: 'Web pages successfully deployed'
+    },
+    {
+        title: '+ 20',
+        description: 'GitHub repositories created'
+    },
+    {
+        title: '+ 3',
+        description: 'Years of experience as a developer'
+    }
+]

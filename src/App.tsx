@@ -12,7 +12,6 @@ function App() {
     <LayoutPortfolio>
       <About />
       <Technologies />
-
       <Projects />
       <AboutMe />
       <Achievements />
