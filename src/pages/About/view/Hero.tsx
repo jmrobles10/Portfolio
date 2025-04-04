@@ -13,8 +13,7 @@ const Hero = () => {
             <Grid size={{ xs: 12, md: 6 }} container direction={'column'} justifyContent={'center'} alignItems={'start'} pt={{ xs: '1rem', md: '4rem', xl: '10rem' }}
                 spacing={{ xs: 2, xl: 3 }}>
                 <Grid size={12}>
-                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} fontWeight={700} color={'rgba(255, 255, 255, 0.5)'}
-                        sx={{ whiteSpace: 'nowrap' }}>
+                    <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} fontWeight={700} color={'rgba(255, 255, 255, 0.5)'}>
                         Personal portfolio
                     </Typography>
                 </Grid>

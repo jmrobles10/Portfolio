@@ -5,6 +5,9 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { Close } from '@mui/icons-material'
 
 const header = () => {
+
+    const fontFamily = 'Inter, sans-serif';
+
     const [mobileOpen, setMobileOpen] = useState(false);
     const theme = useTheme();
     const isTablet = useMediaQuery(theme.breakpoints.up('sm'));
