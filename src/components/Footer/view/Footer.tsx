@@ -9,8 +9,8 @@ const Footer = () => {
     return (
         <Stack direction={'column'} justifyContent={'start'} alignItems={'center'} spacing={2} mt={'4rem'} mb={'4rem'}>
             <Divider sx={{ width: '100%', background: '#F46737' }} />
-            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
-                p={{ xs: '1rem 5rem', xl: '1rem 5rem' }}>
+            <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
+                p={{ xs: '1rem 1rem', sm: '1rem 5rem', xl: '1rem 5rem' }}>
                 <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} color={'#fff'}>
                     Let's work together
                 </Typography>
@@ -23,10 +23,10 @@ const Footer = () => {
                     </Typography>
                 </Stack>
             </Stack>
-            <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
-                p={{ xs: '1rem 5rem', xl: '1rem 5rem' }}
+            <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
+                p={{ xs: '1rem 1rem', sm: '1rem 5rem', xl: '1rem 5rem' }}
             >
-                <Typography fontFamily={fontFamily} fontSize={{ xs: '1.3rem' }} color={'rgba(211, 211, 211, 0.9)'}>
+                <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', sm: '1.3rem' }} color={'rgba(211, 211, 211, 0.9)'}>
                     The only real mistake is the one from which we learn nothing
                 </Typography>
                 <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>

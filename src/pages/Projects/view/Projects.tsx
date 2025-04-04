@@ -1,6 +1,4 @@
 import { Box, Stack, Typography } from '@mui/material'
-import TechnologySection from '../components/TechnologySection';
-import { ReactIcon, DataBaseIcon, FigmaIcon } from '../../../assets';
 
 const Projects = () => {
     const fontFamily = 'Inter, sans-serif';
@@ -26,13 +24,6 @@ const Projects = () => {
                 </Typography>
             </Stack>
 
-            <Stack direction={'row'} spacing={2} justifyContent={'space-between'} alignItems={'center'}>
-
-                <TechnologySection icon={<ReactIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Frontend'} technologies={'React, Angular, WordPress'} />
-                <TechnologySection icon={<DataBaseIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js'} />
-                <TechnologySection icon={<FigmaIcon sx={{ width: '4rem', height: '4rem' }} />} title={'UI/UX'} technologies={'Figma, Canva, Adobe Photoshop, Adobe Illustrator'} />
-
-            </Stack>
         </Stack>
     )
 }

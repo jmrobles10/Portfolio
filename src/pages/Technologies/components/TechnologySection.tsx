@@ -10,14 +10,13 @@ interface TechnologySectionProps {
 const TechnologySection = ({ icon, title, technologies }: TechnologySectionProps) => {
     const fontFamily = 'Inter, sans-serif';
     return (
-        <Stack direction={'column'} spacing={2} flex={1}>
+        <Stack direction={'column'} spacing={2} justifyContent={{ xs: 'center', md: 'start' }} alignItems={{ xs: 'center', md: 'start' }}>
             {icon}
             <Typography fontFamily={fontFamily} fontSize={{ xs: '1.5rem', xl: '2rem' }} color={'#fff'}>
                 {title}
             </Typography>
-            <Typography fontFamily={fontFamily} fontSize={{ xs: '1.2rem', xl: '1.3rem' }} color={'rgb(211, 211, 211)'}
-                noWrap
-            >
+            <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', xl: '1.3rem' }} color={'rgb(211, 211, 211)'}
+                textAlign={{ xs: 'center', md: 'start' }}>
                 {technologies}
             </Typography>
         </Stack>

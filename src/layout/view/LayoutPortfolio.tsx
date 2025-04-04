@@ -8,7 +8,7 @@ interface LayoutPortfolioProps {
 
 const LayoutPortfolio = ({ children }: LayoutPortfolioProps) => {
     return (
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ overflowX: 'hidden' }}>
             <Header />
             <Stack marginTop={'5.625rem'} spacing={20} direction={'column'}>
                 {children}

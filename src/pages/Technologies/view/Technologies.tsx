@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Grid, Stack, Typography } from '@mui/material'
 import { ReactIcon } from '../../../assets/ReactIcon';
 import { DataBaseIcon } from '../../../assets/DataBaseIcon';
 import { FigmaIcon } from '../../../assets/FigmaIcon';
@@ -11,7 +11,7 @@ const Technologies = () => {
     return (
         <Stack
             id='technologies'
-            pl={{ xs: '3rem', xl: '0rem' }} pr={{ xs: '3rem', xl: '0rem' }}
+            pl={{ xs: '0.5rem', md: '3rem', xl: '0rem' }} pr={{ xs: '0.5rem', md: '3rem', xl: '0rem' }}
             spacing={6}
             direction={'column'}
         >
@@ -24,19 +24,37 @@ const Technologies = () => {
                 <Typography fontFamily={fontFamily} fontSize={{ xs: '3rem', xl: '4rem' }} fontWeight={600} color={'rgb(211, 211, 211)'}>
                     Technologies
                 </Typography>
-                <Typography fontFamily={fontFamily} fontSize={{ xs: '1rem', xl: '1.2rem' }} color={'#fff'}>
+                <Typography fontFamily={fontFamily} fontSize={'1rem'} color={'rgb(211, 211, 211)'}>
                     Throughout my 3 years of experience as a developer, both in professional work and personal projects, I've gained extensive knowledge in modern web development, mastering various frameworks and tools. I've developed robust enterprise applications and creative personal projects that have helped me grow as a full-stack developer.{' '}
                 </Typography>
             </Stack>
 
-            <Stack direction={'row'} spacing={2} justifyContent={'space-between'} alignItems={'center'}>
-
-                <TechnologySection icon={<ReactIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Frontend'} technologies={'React, Angular, WordPress'} />
-                <TechnologySection icon={<DataBaseIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js'} />
-                <TechnologySection icon={<FigmaIcon sx={{ width: '4rem', height: '4rem' }} />} title={'UI/UX'} technologies={'Figma, Canva, Adobe Photoshop, Adobe Illustrator'} />
-                <TechnologySection icon={<GitHubIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Source Control'} technologies={'GitHub'} />
-
-            </Stack>
+            <Grid container spacing={5} alignItems={'center'}>
+                <Grid size={{ xs: 12, md: 3 }}>
+                    <TechnologySection
+                        icon={<ReactIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
+                        title={'Frontend'} technologies={'React, Angular, WordPress'}
+                    />
+                </Grid>
+                <Grid size={{ xs: 12, md: 3 }}>
+                    <TechnologySection
+                        icon={<DataBaseIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
+                        title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js'}
+                    />
+                </Grid>
+                <Grid size={{ xs: 12, md: 3 }}>
+                    <TechnologySection
+                        icon={<FigmaIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
+                        title={'UI/UX'} technologies={'Figma, Canva, Adobe Photoshop, Adobe Illustrator'}
+                    />
+                </Grid>
+                <Grid size={{ xs: 12, md: 3 }}>
+                    <TechnologySection
+                        icon={<GitHubIcon sx={{ width: { xs: '2.5rem', md: '4rem' }, height: { xs: '2.5rem', md: '4rem' } }} />}
+                        title={'Source Control'} technologies={'GitHub, Azure DevOps'}
+                    />
+                </Grid>
+            </Grid>
         </Stack>
     )
 }

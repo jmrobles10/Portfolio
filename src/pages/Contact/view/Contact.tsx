@@ -1,8 +1,4 @@
 import { Box, Stack, Typography } from '@mui/material'
-import { ReactIcon } from '../../../assets/ReactIcon';
-import { DataBaseIcon } from '../../../assets/DataBaseIcon';
-import { FigmaIcon } from '../../../assets/FigmaIcon';
-import TechnologySection from '../components/TechnologySection';
 
 const Contact = () => {
     const fontFamily = 'Inter, sans-serif';
@@ -28,13 +24,7 @@ const Contact = () => {
                 </Typography>
             </Stack>
 
-            <Stack direction={'row'} spacing={2} justifyContent={'space-between'} alignItems={'center'}>
 
-                <TechnologySection icon={<ReactIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Frontend'} technologies={'React, Angular, WordPress'} />
-                <TechnologySection icon={<DataBaseIcon sx={{ width: '4rem', height: '4rem' }} />} title={'Backend'} technologies={'.NET, C#, SQL Server, Node.js'} />
-                <TechnologySection icon={<FigmaIcon sx={{ width: '4rem', height: '4rem' }} />} title={'UI/UX'} technologies={'Figma, Canva, Adobe Photoshop, Adobe Illustrator'} />
-
-            </Stack>
         </Stack>
     )
 }
