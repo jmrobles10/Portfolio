@@ -7,7 +7,7 @@ import { InstagramIcon } from '../../../assets/InstagramIcon';
 const Footer = () => {
     const fontFamily = 'Inter, sans-serif';
     return (
-        <Stack direction={'column'} justifyContent={'start'} alignItems={'center'} spacing={2} mt={'4rem'} mb={'4rem'}>
+        <Stack direction={'column'} justifyContent={'start'} alignItems={'center'} spacing={2} mt={'4rem'} mb={{ xs: '2rem', md: '4rem' }}>
             <Divider sx={{ width: '100%', background: '#F46737' }} />
             <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent={'space-between'} alignItems={'center'} spacing={2} alignSelf={'stretch'}
                 p={{ xs: '1rem 1rem', sm: '1rem 5rem', xl: '1rem 5rem' }}>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </Typography>
                 <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
                     <GitHubIcon
-                        onClick={() => window.open('https://www.linkedin.com/in/mateo-robles-156688113/', '_blank')}
+                        onClick={() => window.open('https://github.com/jmrobles10?tab=repositories', '_blank')}
                         sx={{
                             height: '2rem', width: '2rem', cursor: 'pointer',
                             '&:hover': {

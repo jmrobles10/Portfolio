@@ -62,7 +62,7 @@ const header = () => {
 
     return (
         <Stack direction={'row'} display={'flex'} justifyContent={{ xs: 'end', md: 'center' }} alignItems={'center'}
-            alignSelf={'stretch'} mr={{ xs: '1rem', md: '0rem' }}
+            alignSelf={'stretch'} pr={{ xs: '1rem', md: '0rem' }}
             sx={{
                 position: 'fixed', top: 0, left: 0, right: 0, background: 'linear-gradient(180deg, #0F1624 0%, #0F1624 80%, transparent 100%)', padding: '1rem 0rem 2rem 0rem', zIndex: 1000
             }}
@@ -70,6 +70,7 @@ const header = () => {
             <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} spacing={12} width={'fit-content'}
                 padding={{ xs: '0.75rem 0.75rem', md: '1rem 2.5rem' }} borderRadius={2} border="1px solid #272A3C"
                 sx={{ backdropFilter: 'blur(30px)', background: '#161a2e' }}
+                onClick={!isTablet ? () => handleDrawerToggle() : undefined}
             >
                 {isTablet
                     ?
@@ -88,7 +89,6 @@ const header = () => {
                     </Stack>
                     :
                     <IconButton
-                        onClick={handleDrawerToggle}
                         sx={{ padding: 0 }}
                     >
                         <MenuIcon sx={{ color: '#fff', fontSize: '1.5rem' }} />
